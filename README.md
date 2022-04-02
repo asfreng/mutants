@@ -8,7 +8,7 @@ Ver https://github.com/golang-standards/project-layout
 * `maxCount: 1` Cantidad máxima de secuencias mutantes para que el ADN sea considerado humano
 
 ## Solucion planteada (Parte 1)
-Se usa un slice 2D auxiliar para calcular la cantidad de rachas que se completan en determinado punto. Esta estructura se recorre de arriba a abajo y de derecha a izquierda.
+Se usa un slice 2D auxiliar para calcular la cantidad de rachas que se completan en determinado punto. Esta estructura se recorre de arriba a abajo y de izquierda a derecha.
 Para cada punto, se toman en cuenta los puntos que conozco (izquierda, izquierda-arriba, arriba, derecha-arriba) y se calcula en base a las rachas de cada uno de esos puntos en todas las direcciones. Por ejemplo: si estamos procesando el punto (i,j) y quiero saber si obtendré una racha viniendo desde arriba, se toma el "upperStreak" de (i-1,j) y se comparan. Esto genera que para cada punto se tenga las rachas que tiene en ese momento para todas los puntos actualmente conocidos.
 En el momento que el algoritmo encuentre más de 1 patrón, devuelve true, en el caso contrario, termina de recorrer toda la entrada y retorna false.
 El orden del algoritmo es NxN
