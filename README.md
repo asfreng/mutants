@@ -4,8 +4,8 @@
 Ver https://github.com/golang-standards/project-layout
 
 ## Configuracion
-`maxStreak: 4` Cantidad de repeticiones de una misma letra para que cuente como una secuencia mutante
-`maxCount: 1` Cantidad máxima de secuencias mutantes para que el ADN sea considerado humano
+* `maxStreak: 4` Cantidad de repeticiones de una misma letra para que cuente como una secuencia mutante
+* `maxCount: 1` Cantidad máxima de secuencias mutantes para que el ADN sea considerado humano
 
 ## Solucion planteada (Parte 1)
 Se usa un slice 2D auxiliar para calcular la cantidad de rachas que se completan en determinado punto. Esta estructura se recorre de arriba a abajo y de derecha a izquierda.
