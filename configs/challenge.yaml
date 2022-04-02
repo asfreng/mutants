@@ -1,0 +1,13 @@
+server:
+  bindaddress: :9091
+
+# Redis
+database:
+  clustermodeenabled: false
+  addresses: 
+    - 127.0.0.1:6379
+    - 127.0.0.1:6380
+  pool_size: 10
+
+maxStreak: 4
+maxCount: 1
