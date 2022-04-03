@@ -3,7 +3,7 @@
 ## Project layout
 Ver https://github.com/golang-standards/project-layout
 
-## Configuracion
+## Configuración
 * `maxStreak: 4` Cantidad de repeticiones de una misma letra para que cuente como una secuencia mutante
 * `maxCount: 1` Cantidad máxima de secuencias mutantes para que el ADN sea considerado humano
 
